@@ -1,6 +1,7 @@
 const texts = [
     "Youssef Rouatbi",
-    "Bac Info Student 💻"
+    "Bac Info Student 💻",
+    "Computer Science Student"
   ];
 
   let index = 0;
