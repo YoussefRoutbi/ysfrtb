@@ -2,32 +2,58 @@
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 body {
-  background-color: #1a1a2e;
-  color: #e94560;
+  background-color: #140028; /* very dark purple */
+  color: #e0c7f7; /* softer pale lavender for main text */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+#code-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #140028;
+}
 
-.ic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.ic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.p{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+a {
+  color: #ff00ff;
+  font-size: 20px;
+  text-shadow: 0 0 10px #ff00ffcc;
+  transition: color 0.3s ease;
 }
-a{
-    color: #e94560;
-    font-size: 20px;
+
+a:hover {
+  color: #ff66ff;
+  text-shadow: 0 0 15px #ff66ffcc;
 }
-.card{
-    background-color: #1a1a2e;
-    color: #e94560;
+
+.card {
+  background-color: rgba(20, 0, 40, 0.3); /* transparent dark purple */
+  color: #e0c7f7;
+  box-shadow: 0 0 15px #ff00ffcc;
+  border: none;
+  transition: box-shadow 0.3s ease;
+  border-radius: 12px;
 }
+
+.card:hover {
+  box-shadow: 0 0 25px #ff66ffcc;
+}
+
 #typewriter::after {
   content: '|';
   animation: blink 0.7s infinite;
-  color: grey;
+  color: #bb33bb;
 }
 
 @keyframes blink {
@@ -42,35 +68,73 @@ a{
   gap: 30px;
   flex-wrap: wrap;
 }
+
 .skill-card {
   min-height: 135px;
   width: 100px;
   text-align: center;
   padding: 15px;
   border-radius: 12px;
-  box-shadow: 0 0 10px #e94560aa;
+  background-color: rgba(30, 0, 50, 0.45); /* transparent skill card background */
+  box-shadow: 0 0 10px #ff00ff88;
   transition: transform 0.3s ease;
+  color: #e9d8ff;
 }
+
 .skill-card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #f3722ccc;
+  box-shadow: 0 0 20px #ff66ffcc;
 }
+
 .skill-icon {
   font-size: 40px;
-  color: #e94560;
+  color: #ff00ff;
   margin-bottom: 10px;
 }
+
 .progress {
   height: 6px;
   border-radius: 10px;
-  background-color: #333;
+  background-color: #330033;
   overflow: visible;
 }
+
 .progress-bar {
   border-radius: 10px;
-  background: linear-gradient(90deg, #e94560, #f3722c);
+  background: linear-gradient(90deg, #ff00ff, #ff66ff);
 }
+
 .skill-label {
   margin-top: 8px;
   font-size: 0.85rem;
+  color: #e9d8ff;
+}
+
+/* Readability improvements */
+.card-header h1,
+.card-body,
+.lead,
+p,
+ul,
+li {
+  color: #e0c7f7;
+  text-shadow: 0 0 6px #9f65ccaa;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #140028;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff00ffcc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff66ffcc;
 }
