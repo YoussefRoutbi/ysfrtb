@@ -2,8 +2,8 @@
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 body {
-  background-color: #140028; /* very dark purple */
-  color: #e0c7f7; /* softer pale lavender for main text */
+  background-color: #140028; /* deep dark purple */
+  color: #ffccff; /* soft readable magenta */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -26,24 +26,24 @@ body {
 }
 
 a {
-  color: #ff00ff;
+  color: #ff66ff;
   font-size: 20px;
-  text-shadow: 0 0 10px #ff00ffcc;
+  text-shadow: 0 0 10px #ff66ffcc;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ff66ff;
-  text-shadow: 0 0 15px #ff66ffcc;
+  color: #ffaaff;
+  text-shadow: 0 0 15px #ffaaffcc;
 }
 
 .card {
-  background-color: rgba(20, 0, 40, 0.3); /* transparent dark purple */
-  color: #e0c7f7;
-  box-shadow: 0 0 15px #ff00ffcc;
+  background-color: #1c002f; /* solid dark purple for readability */
+  color: #ffccff;
+  box-shadow: 0 0 15px #ff66ff88;
   border: none;
-  transition: box-shadow 0.3s ease;
   border-radius: 12px;
+  transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -53,12 +53,16 @@ a:hover {
 #typewriter::after {
   content: '|';
   animation: blink 0.7s infinite;
-  color: #bb33bb;
+  color: #aa00aa;
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .cb {
@@ -75,20 +79,20 @@ a:hover {
   text-align: center;
   padding: 15px;
   border-radius: 12px;
-  background-color: rgba(30, 0, 50, 0.45); /* transparent skill card background */
-  box-shadow: 0 0 10px #ff00ff88;
+  background-color: #1c002f;
+  box-shadow: 0 0 10px #ff66ff88;
+  color: #ffccff;
   transition: transform 0.3s ease;
-  color: #e9d8ff;
 }
 
 .skill-card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 20px #ff66ffcc;
+  box-shadow: 0 0 20px #ff99ffcc;
 }
 
 .skill-icon {
   font-size: 40px;
-  color: #ff00ff;
+  color: #ff66ff;
   margin-bottom: 10px;
 }
 
@@ -101,27 +105,24 @@ a:hover {
 
 .progress-bar {
   border-radius: 10px;
-  background: linear-gradient(90deg, #ff00ff, #ff66ff);
+  background: linear-gradient(90deg, #ff00ff, #ff99ff);
 }
 
 .skill-label {
   margin-top: 8px;
   font-size: 0.85rem;
-  color: #e9d8ff;
+  color: #ffccff;
 }
 
-/* Readability improvements */
 .card-header h1,
 .card-body,
 .lead,
 p,
 ul,
 li {
-  color: #e0c7f7;
-  text-shadow: 0 0 6px #9f65ccaa;
+  text-shadow: 0 0 6px #ff99ff88;
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -131,10 +132,10 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff00ffcc;
+  background: #ff66ffcc;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff66ffcc;
+  background: #ff99ffcc;
 }
