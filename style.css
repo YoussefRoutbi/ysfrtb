@@ -139,3 +139,6 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff99ffcc;
 }
+.project{
+  border: 1px solid #1c002f;
+}
