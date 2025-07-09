@@ -49,7 +49,7 @@ window.addEventListener("resize", resize);
 const fontSize = 18;
 const columns = Math.floor(width / fontSize);
 const drops = [];
-const binaryChars = ['0', '1'];
+const binaryChars = ['0', '1','ｱ', 'ﾐ', 'ﾇ', 'ﾍ', 'ｳ', 'ｼ', 'ﾅ'];
 
 for (let i = 0; i < columns; i++) {
     drops[i] = Math.random() * height / fontSize;
