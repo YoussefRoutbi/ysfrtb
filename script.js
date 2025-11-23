@@ -1,6 +1,5 @@
 const texts = [
-    "Youssef Rouatbi",
-    "Bac Info Student 💻",
+    "Youssef Rouatbi 💻",
     "Computer Science Student"
 ];
 
@@ -76,3 +75,4 @@ function draw() {
 }
 
 setInterval(draw, 33);
+
